@@ -215,17 +215,23 @@ public class MainActivity extends AppCompatActivity {
      */
     @SuppressLint("SetTextI18n")
     private void fee() {
-        // Geld fehlt
+        /**
+         * Geld fehlt noch für diesen oder mehrere Monate
+         */
         if (((Account.globalAccount.i * getMonths()) - Account.globalAccount.amount) > 0) {
             TextView dueView = findViewById(R.id.dueView);
             dueView.setText("Dir steht noch Geld von " + getMonths() + "Monat/en zu");
         }
-        // Geldsumme stimmt
+        /**
+         * Geldsumme stimmt
+         */
         else if (((Account.globalAccount.i * getMonths()) - Account.globalAccount.amount) == 0) {
             TextView dueView = findViewById(R.id.dueView);
             dueView.setText("Du hast alles Geld bekommen");
         }
-        // Vorschuss
+        /**
+         * Vorschuss vorhanden
+         */
         else {
             TextView dueView = findViewById(R.id.dueView);
             dueView.setText("Du hast schon für zusätzliche Monate Geld bekommen");
