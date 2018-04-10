@@ -15,6 +15,11 @@ public class Account implements Serializable {
      */
     public int amount = 0;
     public int i = 28;
+    /**
+     * eigener Integer für den selbst hinzugefügten oder gelöschten Betrag für den Kontostand
+     * wenn dieser nicht extra dem Kontostand hinzugefügt wird,
+     * ändert sich der Betrag amount für den globalAccount.
+     */
     public int amountTransfer = 0;
     public GregorianCalendar start = new GregorianCalendar();
 
