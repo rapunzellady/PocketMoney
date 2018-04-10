@@ -16,7 +16,7 @@ public class Account implements Serializable {
     public int amount = 0;
     public int i = 28;
     /**
-     * eigener Integer für den selbst hinzugefügten oder gelöschten Betrag für den Kontostand
+     * eigener Integer amountTransfer für den selbst hinzugefügten oder gelöschten Betrag für den Kontostand
      * wenn dieser nicht extra dem Kontostand hinzugefügt wird,
      * ändert sich der Betrag amount für den globalAccount.
      */
