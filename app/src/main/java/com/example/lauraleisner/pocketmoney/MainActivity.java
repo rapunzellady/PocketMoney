@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Hinzufuegen eigener Betraege zum Kontostand showBalance in balanceView
+     */
+
+    /**
      * fuegt den im MoneyEditText Textfeld eingegebenen Betrag dem Kontostand hinzu,
      * nicht aber dem globalAccount amount
      * @param view  addMoneyButton
@@ -197,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Kontostand anzeigen/aktualisieren
+     * Kontostand anzeigen/aktualisieren im Textfeld balanceView
      */
     private void showBalance() {
         TextView balanceView = findViewById(R.id.balanceView);
